@@ -49,7 +49,7 @@
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">Word </label> <i class="fa-solid fa-eye prf"></i>
-                                <input autocomplete="off" required type="text" class="form-control" placeholder="Insert Word" name="answer" id="main_prf">
+                                <input autocomplete="off" required type="text" class="form-control" placeholder="Insert Word" name="answer" id="main_prf" autofocus>
                             </div>
                             <input type="hidden" value="{{$rand_word['word']}}" name="word" id="hidden_prf">
                             <input type="hidden" value="{{$rand_word['id']}}" name="word_id">
