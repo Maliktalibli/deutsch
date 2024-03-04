@@ -11,7 +11,7 @@
         @foreach ($teils as $teil)
         <div class="col-12 col-md-3">
             <div class="card">
-                <img class="card-img-top" src="/assets/img/photos/{{$teil['short']}}.jpg" alt="Unsplash">
+                <img class="card-img-top" src="/assets/img/photos/{{strtolower($teil['short'])}}.jpg" alt="Unsplash">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="input-group mb-3">
