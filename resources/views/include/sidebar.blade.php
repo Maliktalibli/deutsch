@@ -9,13 +9,13 @@
                 Pages
             </li>
 
-            <li class="sidebar-item active">
+            <li class="sidebar-item {{ (request()->is('/*')) ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{route('front.index')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Unregular Verbs</span>
                 </a>
             </li>
 
-            <li class="sidebar-item active">
+            <li class="sidebar-item {{ (request()->is('words*')) ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{route('front.words')}}">
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Words</span>
                 </a>
