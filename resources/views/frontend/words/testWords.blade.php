@@ -61,7 +61,7 @@
                         <div class="alert alert-danger alert-dismissible" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             <div class="alert-message">
-                                <p>Sözlər bitdi!</p>
+                                <p>Sözlər bitdi qaqa!</p>
                                 <p>
                                     @if(session()->get('fail_word') != NULL)
                                         <b>Təkrar etməli olduğunuz sözlər:</b>
