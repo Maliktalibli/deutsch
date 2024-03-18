@@ -63,9 +63,11 @@
                             <div class="alert-message">
                                 <p>Sözlər bitdi! Təkrar etməli olduğunuz sözlər:</p>
                                 <p>
-                                    @foreach(session()->get('fail_word') as $word)
-                                    <span>{{$word}}</span>,
-                                    @endforeach
+                                    @if(session()->get('fail_word') != NULL)
+                                        @foreach(session()->get('fail_word') as $word)
+                                        <span>{{$word}}</span>,
+                                        @endforeach
+                                    @endif
                                 </p>
                             </div>
                         </div>
