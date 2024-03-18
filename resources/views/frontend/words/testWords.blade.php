@@ -64,7 +64,7 @@
                                 <p>Sözlər bitdi!</p>
                                 <p>
                                     @if(session()->get('fail_word') != NULL)
-                                        <b>Təkrar etməli olduğunuz sözlər: </b>
+                                        <b>Təkrar etməli olduğunuz sözlər bunlardir:</b>
                                         @foreach(session()->get('fail_word') as $word)
                                         <span>{{$word}}</span>,
                                         @endforeach
