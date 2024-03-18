@@ -7,7 +7,7 @@
     <div class="container-fluid p-0">
 
         <div class="mb-3">
-            <h1 class="h3 d-inline align-middle">UNREGELMÄSSIGE VERBEN {{$level}}</h1>
+            <h1 class="h3 d-inline align-middle">Words {{$level}}</h1>
         </div>
 
         <div class="row">
@@ -61,7 +61,12 @@
                         <div class="alert alert-danger alert-dismissible" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             <div class="alert-message">
-                                <p>Sözlər bitdi!</p>
+                                <p>Sözlər bitdi! Təkrar etməli olduğunuz sözlər:</p>
+                                <p>
+                                    @foreach(session()->get('fail_word') as $word)
+                                    <span>{{$word}}</span>,
+                                    @endforeach
+                                </p>
                             </div>
                         </div>
                     </div>

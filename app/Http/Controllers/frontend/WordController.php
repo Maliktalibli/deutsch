@@ -79,6 +79,7 @@ class WordController extends Controller
         }else{
             
             $check = [0, $rand_answer.' yanlışdır!<br>', '<strong>'.$correct_word['word'].':</strong> '.$correct_word['translate']];
+            session()->push('fail_word', $correct_word['word']);
         }
         
         if (isset($new_session_words) AND empty($new_session_words)) {
