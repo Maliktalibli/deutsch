@@ -61,9 +61,10 @@
                         <div class="alert alert-danger alert-dismissible" role="alert">
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             <div class="alert-message">
-                                <p>Sözlər bitdi! Təkrar etməli olduğunuz sözlər:</p>
+                                <p>Sözlər bitdi!</p>
                                 <p>
                                     @if(session()->get('fail_word') != NULL)
+                                        <b>Təkrar etməli olduğunuz sözlər: </b>
                                         @foreach(session()->get('fail_word') as $word)
                                         <span>{{$word}}</span>,
                                         @endforeach
