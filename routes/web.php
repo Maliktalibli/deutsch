@@ -25,3 +25,9 @@ Route::get('/words/{level}', [WordController::class, 'wordsLevel'])->name('front
 Route::get('/words/learn/{level}/{teil}/{page?}', [WordController::class, 'learnWords'])->name('front.learnWords');
 Route::get('/words/test/{level}/{teil}/{page?}', [WordController::class, 'testWords'])->name('front.testWords');
 Route::post('/words/test/{level}/{teil}/{page?}', [WordController::class, 'testWordsPost'])->name('front.testWordsPost');
+
+Route::get('/goethe', [WordController::class, 'goethe'])->name('front.goethe');
+Route::get('/goethe/{level}', [WordController::class, 'goetheLevel'])->name('front.goetheLevel');
+Route::get('/goethe/learn/{level}/{teil}/{page?}', [WordController::class, 'learnGoethe'])->name('front.learnGoethe');
+Route::get('/goethe/test/{level}/{teil}/{page?}', [WordController::class, 'testGoethe'])->name('front.testGoethe');
+Route::post('/goethe/test/{level}/{teil}/{page?}', [WordController::class, 'testGoethePost'])->name('front.testGoethePost');

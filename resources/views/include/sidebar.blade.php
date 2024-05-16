@@ -20,6 +20,11 @@
                     <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Words</span>
                 </a>
             </li>
+            <li class="sidebar-item {{ (request()->is('goethe*')) ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{route('front.goethe')}}">
+                    <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Goethe</span>
+                </a>
+            </li>
 
             <li class="sidebar-item">
                 <a class="sidebar-link" href="#">
